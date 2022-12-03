@@ -319,9 +319,7 @@ def second():
         sack2 = sacks[i-1]
         sack3 = sacks[i]
         badge = list(set(sack1) & set(sack2) & set(sack3))[0]
-        value = ord(badge)-38 if badge.isupper() else ord(badge)-96
-        sum += value
-        # print(badge, value)
+        sum += ord(badge)-38 if badge.isupper() else ord(badge)-96
         i+=3
     print(sum)
 first()
