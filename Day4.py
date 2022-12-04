@@ -998,7 +998,7 @@ input = """1-2,2-96
 5-88,5-5
 78-96,79-81
 8-9,7-8"""
-def part1():
+def first():
     pairs = input.split('\n')
     answer = 0;
     for pair in pairs:
@@ -1012,7 +1012,7 @@ def part1():
             answer += 1
     print(answer)
     
-def part2():
+def second():
     pairs = input.split('\n')
     answer = 0
     for pair in pairs:
@@ -1030,3 +1030,6 @@ def part2():
         ):
             answer += 1
     print(answer)
+
+first()
+second()
